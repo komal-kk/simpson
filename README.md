@@ -2,48 +2,33 @@
 Simpson 3/8 rule for integration in 3D
 
 	import matplotlib.pyplot as plt
-
 	import scipy
-
 	import scipy.integrate as integrate
-
 	import numpy as np
-
 	import math
-
 	import cmath 
-
 	import types
-
 	import scipy.stats
-
 	import scipy.special as special
-
 	from scipy.stats import norm
-
 	import matplotlib.mlab as mlab
-
 	import scipy.sparse as sp
-
 	import scipy.linalg as la
-
+	
 	#function: cos(x) cos(y) cos(z)
-
-	x0=-1
-
+	
+	x0=-1 #initial and final values
 	xn=1
 
 	y0=-1
-
 	yn=1
 
 	z0=-1
-
 	zn=1
 
 	n=10000
 
-	h=(abs(xn-x0))/(float)(n)
+	h=(abs(xn-x0))/(float)(n) #step-size
 
 	def fun():
 
@@ -87,4 +72,4 @@ Simpson 3/8 rule for integration in 3D
 			
 		return((3*h/8)*(fxyz(z0)+fxyz(zn)+sz))
 
-	print(fun())
+	print("value of integration",fun())
