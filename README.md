@@ -15,7 +15,7 @@ import matplotlib.mlab as mlab
 import scipy.sparse as sp
 import scipy.linalg as la
 
-
+#function: cos(x) cos(y) cos(z)
 
 x0=-1
 xn=1
