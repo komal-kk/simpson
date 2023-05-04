@@ -1,5 +1,6 @@
 # simpson
 Simpson 3/8 rule for integration in 3D
+
 import matplotlib.pyplot as plt
 import scipy
 import scipy.integrate as integrate
